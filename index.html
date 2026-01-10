@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourloop - Your Technical Backup for Academic Projects</title>
+    <meta name="description"
+        content="Fourloop helps college students successfully complete major and minor academic projects with custom development, installation support, and viva preparation guidance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">Fourl<svg class="logo-infinity-svg" viewBox="0 0 24 24" width="1em" height="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path
+                            d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 9.17 8.15C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5 2.83 2.5c.97.97 2.33 1.53 3.77 1.53 2.98 0 5.4-2.42 5.4-5.38s-2.42-5.38-5.4-5.38zM5.4 15.38c-1.86 0-3.38-1.52-3.38-3.38S3.54 8.62 5.4 8.62c.9 0 1.76.35 2.4 1l2.83 2.5-2.83 2.5c-.64.65-1.5 1-2.4 1zm13.2 0c-.9 0-1.76-.35-2.4-1l-2.83-2.5 2.83-2.5c.64-.65 1.5-1 2.4-1 1.86 0 3.38 1.52 3.38 3.38s-1.52 3.38-3.38 3.38z"
+                            fill="url(#logoGradient)" />
+                    </svg>p</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#domains" class="nav-link">Domains</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-button" onclick="scrollToContact()">Get Started</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Your Technical Backup</span>
+                </div>
+                <h1 class="hero-title">
+                    Complete Your Projects with
+                    <span class="gradient-text">Confidence</span>
+                </h1>
+                <p class="hero-description">
+                    Custom-built academic projects with installation support, clear explanations,
+                    and viva preparation. We don't just deliver code – we make you understand it.
+                </p>
+                <div class="hero-buttons">
+                    <button class="primary-button" onclick="scrollToContact()">
+                        Start Your Project
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="secondary-button" onclick="scrollToSection('services')">
+                        Explore Services
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">On-Time</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">🎓</div>
+                    <div class="card-text">BTech Projects</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">🤖</div>
+                    <div class="card-text">AI & ML</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">💻</div>
+                    <div class="card-text">Full Stack</div>
+                </div>
+                <div class="floating-card card-4">
+                    <div class="card-icon">🔒</div>
+                    <div class="card-text">Cyber Security</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What We Offer</span>
+                <h2 class="section-title">Complete Project Solutions</h2>
+                <p class="section-description">
+                    From development to viva preparation, we've got you covered at every step
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#gradient1)" opacity="0.1" />
+                            <path d="M12 20L18 26L28 14" stroke="url(#gradient1)" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40">
+                                    <stop stop-color="#667eea" />
+                                    <stop offset="1" stop-color="#764ba2" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Project Development</h3>
+                    <p class="service-description">
+                        Custom-built major and mini projects tailored to your syllabus, college guidelines,
+                        and technology requirements. No templates, just original work.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Customized to your needs</li>
+                        <li>✓ Modern tech stack</li>
+                        <li>✓ Clean, documented code</li>
+                        <li>✓ On-time delivery</li>
+                    </ul>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#gradient2)" opacity="0.1" />
+                            <path d="M20 10V30M10 20H30" stroke="url(#gradient2)" stroke-width="3"
+                                stroke-linecap="round" />
+                            <circle cx="20" cy="20" r="8" stroke="url(#gradient2)" stroke-width="3" />
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="40" y2="40">
+                                    <stop stop-color="#f093fb" />
+                                    <stop offset="1" stop-color="#f5576c" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Installation & Setup</h3>
+                    <p class="service-description">
+                        Complete project execution support including dependency fixing, environment setup,
+                        error resolution, and deployment assistance.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Environment configuration</li>
+                        <li>✓ Dependency management</li>
+                        <li>✓ Error debugging</li>
+                        <li>✓ Local & cloud deployment</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="12" fill="url(#gradient3)" opacity="0.1" />
+                            <path d="M20 12V20L26 23" stroke="url(#gradient3)" stroke-width="3"
+                                stroke-linecap="round" />
+                            <circle cx="20" cy="20" r="10" stroke="url(#gradient3)" stroke-width="3" />
+                            <defs>
+                                <linearGradient id="gradient3" x1="0" y1="0" x2="40" y2="40">
+                                    <stop stop-color="#4facfe" />
+                                    <stop offset="1" stop-color="#00f2fe" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Viva Preparation</h3>
+                    <p class="service-description">
+                        Step-by-step walkthrough, code explanation, architecture understanding,
+                        and complete viva preparation guidance to boost your confidence.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Code walkthrough</li>
+                        <li>✓ Concept explanation</li>
+                        <li>✓ Q&A preparation</li>
+                        <li>✓ Presentation tips</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domains Section -->
+    <section class="domains" id="domains">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Expertise</span>
+                <h2 class="section-title">Project Domains We Master</h2>
+                <p class="section-description">
+                    Specializing in cutting-edge technologies and high-demand domains
+                </p>
+            </div>
+            <div class="domains-grid">
+                <div class="domain-card">
+                    <div class="domain-icon">🤖</div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>AI models, neural networks, and intelligent systems</p>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">🧠</div>
+                    <h3>Machine Learning</h3>
+                    <p>Predictive models, classification, and regression</p>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">✨</div>
+                    <h3>Generative AI</h3>
+                    <p>LLMs, RAG systems, and AI applications</p>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">📊</div>
+                    <h3>Data Science</h3>
+                    <p>Data analysis, visualization, and insights</p>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">📈</div>
+                    <h3>Data Analyst</h3>
+                    <p>Power BI, Tableau, and analytics dashboards</p>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">🔒</div>
+                    <h3>Cyber Security</h3>
+                    <p>Security systems, encryption, and threat detection</p>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">🤖</div>
+                    <h3>Agentic AI</h3>
+                    <p>LangChain, LangGraph, AI agents, and autonomous systems</p>
+                </div>
+                <div class="domain-card">
+                    <div class="domain-icon">🎯</div>
+                    <h3>Custom Projects</h3>
+                    <p>Any domain as per your requirements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-content">
+                <div class="why-us-left">
+                    <span class="section-badge">Why Fourloop</span>
+                    <h2 class="section-title">Your Success is Our Priority</h2>
+                    <p class="why-us-description">
+                        We're not just another project service. We're your technical partner who ensures
+                        you understand, present, and succeed with confidence.
+                    </p>
+                    <div class="why-us-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🚀</div>
+                            <div class="feature-content">
+                                <h4>Modern & Advanced</h4>
+                                <p>Latest technologies and industry-standard practices</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💡</div>
+                            <div class="feature-content">
+                                <h4>Clear Explanations</h4>
+                                <p>Not just delivery – we make you understand everything</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-content">
+                                <h4>Fast Response</h4>
+                                <p>Quick turnaround and 24/7 technical support</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎓</div>
+                            <div class="feature-content">
+                                <h4>Student-Friendly</h4>
+                                <p>Affordable pricing designed for student budgets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-right">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "Fourloop didn't just give me a project – they made me understand every line of code.
+                            Aced my viva with confidence!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <div class="author-name">Ananya Sharma</div>
+                                <div class="author-role">BTech CSE, Final Year</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "Best decision ever! Got a custom ML project, complete setup help, and amazing viva prep.
+                            Highly recommend!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div class="author-info">
+                                <div class="author-name">Rahul Verma</div>
+                                <div class="author-role">MTech AI/ML</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-left">
+                    <span class="section-badge">Get in Touch</span>
+                    <h2 class="section-title">Ready to Start Your Project?</h2>
+                    <p class="contact-description">
+                        Let's discuss your requirements and create something amazing together.
+                        Fill out the form and we'll get back to you within 24 hours.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-info-label">Email</div>
+                                <div class="contact-info-value">
+                                    <a href="mailto:fourloopstudio4@gmail.com"
+                                        style="color: inherit; text-decoration: none;">fourloopstudio4@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-info-label">Instagram</div>
+                                <div class="contact-info-value">
+                                    <a href="https://www.instagram.com/fourloop_studios/" target="_blank"
+                                        style="color: inherit; text-decoration: none;">@fourloop_studios</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-info-label">Response Time</div>
+                                <div class="contact-info-value">Within 24 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="9876543210" maxlength="10"
+                                pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select your course</option>
+                                <option value="BTech / BE">BTech / BE</option>
+                                <option value="MTech / ME">MTech / ME</option>
+                                <option value="BSc Computer Science">BSc Computer Science</option>
+                                <option value="MSc Computer Science">MSc Computer Science</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="domain">Project Domain</label>
+                            <select id="domain" name="domain" required>
+                                <option value="">Select domain</option>
+                                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                                <option value="Machine Learning">Machine Learning</option>
+                                <option value="Generative AI / RAG">Generative AI / RAG</option>
+                                <option value="Data Science">Data Science</option>
+                                <option value="Business Intelligence">Business Intelligence</option>
+                                <option value="Cyber Security">Cyber Security</option>
+                                <option value="Web Applications">Web Applications</option>
+                                <option value="Custom Domain">Custom Domain</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us about your project requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">Fourl<svg class="logo-infinity-svg" viewBox="0 0 24 24" width="1em"
+                                height="1em">
+                                <path
+                                    d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 9.17 8.15C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5 2.83 2.5c.97.97 2.33 1.53 3.77 1.53 2.98 0 5.4-2.42 5.4-5.38s-2.42-5.38-5.4-5.38zM5.4 15.38c-1.86 0-3.38-1.52-3.38-3.38S3.54 8.62 5.4 8.62c.9 0 1.76.35 2.4 1l2.83 2.5-2.83 2.5c-.64.65-1.5 1-2.4 1zm13.2 0c-.9 0-1.76-.35-2.4-1l-2.83-2.5 2.83-2.5c.64-.65 1.5-1 2.4-1 1.86 0 3.38 1.52 3.38 3.38s-1.52 3.38-3.38 3.38z"
+                                    fill="url(#logoGradient)" />
+                            </svg>p</span>
+                    </div>
+                    <p class="footer-tagline">Your technical backup for academic success</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Project Development</a></li>
+                            <li><a href="#services">Installation & Setup</a></li>
+                            <li><a href="#services">Viva Preparation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Domains</h4>
+                        <ul>
+                            <li><a href="#domains">AI & ML</a></li>
+                            <li><a href="#domains">Data Science</a></li>
+                            <li><a href="#domains">Web Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="https://www.instagram.com/fourloop_studios/" target="_blank">Instagram</a></li>
+                            <li><a href="mailto:fourloopstudio4@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fourloop. All rights reserved.</p>
+                <p>Made with 💜 for students</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
